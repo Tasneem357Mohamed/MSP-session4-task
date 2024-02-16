@@ -1,0 +1,704 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: white;
+}
+
+/* start page one */
+.page-1 
+{
+    background: radial-gradient(50% 50% at 50% 50%, #242424 0%, #000000 100%);
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 7% 7% 95% 45%;
+}
+
+/* start nav section */
+.page-1 nav {
+    grid-column: 2;
+    grid-row: 2 / span 1;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.page-1 .nav-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-1 .logo-image {
+    padding-right: 10px;
+}
+
+.page-1 .logo-image img {
+    width: 42px;
+}
+
+.page-1 .nav-header {
+    color: rgba(242, 81, 35, 1);
+    font-family: "Lily Script One", system-ui;
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+.page-1 .nav-content {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.page-1 .nav-content ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-1 .nav-content li {
+    padding-top: 6px;
+    padding-right: 70px;
+}
+
+.page-1 .nav-icons {
+    color: rgba(242, 81, 35, 1);
+    font-size: 17px;
+    padding-top: 6px;
+}
+
+.page-1 .nav-icons i {
+    padding-left: 3px;
+}
+
+/* end nav section */
+/* start content section */
+.page-1 .content-section {
+    grid-column: 2;
+    grid-row: 3 / span 1;
+    color: white;
+    display: grid;
+    grid-template-columns: 35% 38% 30%;
+    grid-template-rows: 20%;
+    color: white;
+}
+
+.page-1 .content-text {
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 15% 15% 15% 10% 10% 5% 10%;
+}
+
+.page-1 .content-header h1 {
+    grid-row: 1 / span 1;
+    font-size: 60px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+.page-1 .colored-header {
+    grid-row: 2 / span 1;
+    display: inline-block;
+    color: rgba(242, 81, 35, 1);
+    font-size: 60px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+.page-1 .content-paragraph {
+    grid-row: 4 / span 1;
+}
+
+.page-1 .content-paragraph p {
+    width: 295px;
+    color: rgba(135, 134, 142, 1);
+    font-family: "Inter", sans-serif;
+}
+
+.page-1 .content-btn {
+    grid-row: 6/ span 1;
+}
+
+.page-1 .content-btn button {
+    background-color: rgba(242, 81, 35, 1);
+    border-style: none;
+    border-radius: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+}
+
+.page-1 .text-icons {
+    grid-row: 8 / span 1;
+    font-size: 17px;
+    padding-left: 11.5px;
+    color: rgba(242, 81, 35, 1);
+}
+
+.page-1 .text-icons i {
+    padding-left: 3px;
+}
+.page-1 .parent-content-image
+{
+    grid-column: 2/ span 1;
+    grid-row-start: 2;
+}
+.page-1 .content-image {
+    border: 35px solid rgba(242, 81, 35, 1);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+.page-1 .content-image img {
+    width: 600px;
+    height: 550px;
+    position: absolute;
+    top: 15%;
+    left: 28.5%;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-1 .content-icons {
+    grid-column: 3 / span 1;
+    grid-row-start: 2;
+    color: rgba(242, 81, 35, 1);
+    font-size: 92px;
+}
+
+.page-1 .content-icons ul {
+    display: grid;
+    grid-template-columns: 25% 10% 33%;
+    grid-template-rows: 50% 55%;
+}
+
+.page-1 .content-icons .bi {
+    font-size: 67px;
+    grid-column: 3 / span 1;
+    grid-row: 2 /span 1;
+}
+
+.bi-3 {
+    font-size: 45px;
+    grid-column: 2 /span 1;
+    grid-row: 3 /span 2;
+}
+
+/* end content section */
+/* start progress bar  */
+.page-1 .parent-progress-par {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    padding-left: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.page-1 .progress {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #2D2D2D linear-gradient(to right, transparent 50%, var(--clr)0);
+    color: white;
+}
+
+.page-1 .progress h2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 27px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.page-1 .per {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.page-1 .progress h3 {
+    position: absolute;
+    top: 62%;
+    left: 49%;
+    transform: translate(-50%);
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(242, 81, 35, 1);
+    z-index: 1;
+}
+
+.page-1 .progress::before {
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.page-1 .progress::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: black;
+}
+
+.page-1 .progress::before {
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+}
+
+.page-1 .progress.less::before {
+    background: #2D2D2D;
+    transform: rotate(calc(((var(--i) - 0) * 0.01turn)));
+}
+
+/* End progress bar  */
+/* end page one */
+
+/* start page two */
+.page-2
+{
+    background-color: #000000;
+    padding-top: 400px;
+    display: grid;
+    grid-template-columns: 5% 50% 2% 50% 5%;
+    grid-template-rows: 120%;
+}
+/* start text content */
+.page-2 .content-text
+{
+    grid-column: 2 / span 1;
+    grid-row: 1/ span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.page-2 .content-text .colored-paragraph
+{
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: rgba(242, 81, 35, 1);
+}
+.content-header h1
+{
+    margin-top: 3px;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+.colored-content-header
+{
+    margin-top: -20px;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    color: rgba(242, 81, 35, 1);
+}
+.page-2 .content-text .content-paragraph
+{
+    margin-top: 40px;
+    margin-left: -100px;
+}
+.page-2 .content-text .content-paragraph pre
+{
+    font-family: "Inter", sans-serif;
+    color:#87868E;
+    
+}
+.page-2 .content-text .icons-container
+{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+} 
+.page-2 .content-text .icons-list ul
+{
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+    color: rgba(242, 81, 35, 1);
+}
+.page-2 .content-text .content-btn button
+{
+    margin-top: 30px;
+    background-color: rgba(242, 81, 35, 1);
+    border-style: none;
+    border-radius: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    height: 40px;
+    width: 130px;
+}
+/* end conent text */
+/* start content image */
+.page-2 .content-img
+{
+    grid-column: 4/ span 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.page-2 .container-1 img
+{
+    width: 500px;
+    height: 160px;
+    border-radius: 20px;
+}
+.page-2 .content-img .container-2
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.page-2 .content-img .container-2 .img-1 img
+{
+    width: 330px;
+    height: 140px;
+    border-radius: 20px;
+}
+.page-2 .content-img .container-2 .img-2 img
+{
+    width: 150px;
+    height: 140px;
+    border-radius: 20px;
+}
+.page-2 .content-img .container-3
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.page-2 .content-img .container-3 .img-4 img
+{
+    width: 150px;
+    height: 140px;
+    border-radius: 20px;
+}
+.page-2 .content-img .container-3 .img-5 img
+{
+    width: 330px;
+    height: 140px;
+    border-radius: 20px;
+}
+/* end content image */
+/* end page two */
+/* start page three */
+.page-3
+{
+    height: 700px;
+    background-color: #000000;
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 33.33% 33.33% 55%;
+}
+.page-header
+{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content: center;
+}
+.page-header h1
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+}
+.orange-header
+{
+    grid-row: 2 / span 1;
+    display: inline-block;
+    color: rgba(242, 81, 35, 1);
+    display: flex;
+    justify-content: center;
+}
+.div-container
+{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.div-container .item
+{
+    height: 270px;
+    width: 250px;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #2D2D2D 0%, #000000 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.item-icon 
+{
+    padding: 30px 0px 0px 30px;
+    color: rgba(242, 81, 35, 1);
+}
+.item-icon i
+{
+    font-size: 35px;
+}
+.item-header
+{
+    width: 212px;
+    padding: 5px 0px 0px 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.item-paragraph
+{
+    padding: 15px 0px 0px 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color:#87868E;
+}
+.item-btn button
+{
+    padding: 15px 0px 0px 30px;
+    background: none;
+    border: none;
+    color: rgba(242, 81, 35, 1);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.blured-section
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+}
+.background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/assets/image3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(20px);
+    transform: scale(1.1);
+}
+.logo-div
+{
+    padding: 60px 0px 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo-div .logo-image img
+{
+    width: 40px;
+}
+.logo-div .logo-text
+{
+    padding-left: 7px;
+}
+.logo-div .logo-text .logo-header h3
+{
+    font-family: "Lily Script One", system-ui;
+}
+.logo-div .logo-text .logo-paragraph p
+{
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5)
+}
+.logo-description pre
+{
+    margin-left: -50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.5)
+}
+.blur-logo .logo-btn button
+{
+    margin-left: -35px;
+    padding: 0px 0px 20px 100px;
+    background: none;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+}
+.blur-logo .logo-icons ul
+{
+    margin-left: -35px;
+    padding: 5px 0px 20px 100px;
+    display: flex;
+    gap: 11px;
+    font-size: 23px;
+    color: rgba(135, 134, 142, 1);
+}
+.blur-content-1
+{
+    margin-left: 150px;
+    margin-right: 120px;
+    padding: 60px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+.blur-content-1 .content-header
+{
+    margin-left: -50px;
+}
+.blur-content-1 .content-header h3
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.blur-content-1 .content-list ul
+{
+    margin-left: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 9px;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.blur-content-2
+{
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+.blur-content-2 .content-header
+{
+    margin-left: -20px;
+}
+.blur-content-2 .content-header h3
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.blur-content-2 .content-list ul
+{
+    margin-left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.blur-content-3
+{
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+.blur-content-3 .title h3
+{
+    margin-left: 150px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.line
+{
+    margin-left: 150px;
+    border: 2px solid rgba(242, 81, 35, 1);
+
+}
+.blur-content-3 .content-list-3
+{
+    margin-left: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.blur-content-3 .content-list-3 .icon-list ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.blur-content-3 .content-list-3 .icon-list i
+{
+    font-size: 20px;
+    color: rgba(242, 81, 35, 1);
+}
+.blur-content-3 .content-list-3 .icon-paragraph ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+}
+.blur-content-3 .content-list-3 .icon-paragraph p
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color:  rgba(255, 255, 255, 0.5);
+
+}
+.blur-content-3 .content-list-3 .icon-paragraph pre
+{
+    margin-left: -135px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color:  rgba(255, 255, 255, 0.5);
+}
+
+/* end page three */
